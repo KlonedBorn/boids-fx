@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Scene?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<Scene xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.kloneborn.SceneController">
+    <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0">
+      <children>
+         <AnchorPane prefHeight="600.0" prefWidth="300.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="600.0" AnchorPane.topAnchor="0.0">
+            <children>
+               <Label alignment="CENTER" layoutX="-66.0" layoutY="234.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="30.0" style="-fx-background-color: dodgerblue; -fx-font-size: 24px; -fx-text-fill: white; -fx-font-weight: bold;" text="Controls" AnchorPane.bottomAnchor="560.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               <GridPane hgap="2.0" layoutX="-33.0" layoutY="40.0" prefHeight="559.0" prefWidth="300.0" style="-fx-border-color: black; -fx-padding: 10px;" vgap="2.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="40.0">
+                  <columnConstraints>
+                     <ColumnConstraints />
+                     <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="80.0" />
+                     <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+                     <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                  </columnConstraints>
+                  <rowConstraints>
+                     <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  </rowConstraints>
+                  <children>
+                     <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="FPS" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                        <font>
+                           <Font size="14.0" />
+                        </font>
+                     </Label>
+                     <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="UPS" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                        <font>
+                           <Font size="14.0" />
+                        </font>
+                     </Label>
+                     <Slider fx:id="fps_slid" blockIncrement="5.0" majorTickUnit="10.0" max="120.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minorTickCount="5" showTickMarks="true" snapToTicks="true" value="60.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                     <Slider fx:id="ups_sld" blockIncrement="5.0" majorTickUnit="10.0" max="120.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minorTickCount="5" showTickMarks="true" snapToTicks="true" value="60.0" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                     <Label fx:id="fps_out" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="60" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                     <Label fx:id="ups_out" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="60" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+                     <Slider fx:id="alignment_sld" blockIncrement="1.0" majorTickUnit="1.0" max="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minorTickCount="5" showTickMarks="true" snapToTicks="true" value="1.0" GridPane.columnIndex="2" GridPane.rowIndex="13" />
+                     <Label fx:id="alignment_out" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="1.0" GridPane.columnIndex="3" GridPane.rowIndex="13" />
+                     <Label fx:id="cohesion_out" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="1.0" GridPane.columnIndex="3" GridPane.rowIndex="14" />
+                     <Label fx:id="seperation_out" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="1.0" GridPane.columnIndex="3" GridPane.rowIndex="15" />
+                     <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Flocking" GridPane.columnIndex="1" GridPane.columnSpan="2147483647" GridPane.rowIndex="12">
+                        <font>
+                           <Font size="18.0" />
+                        </font>
+                     </Label>
+                     <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Simulation" GridPane.columnIndex="1" GridPane.columnSpan="2147483647">
+                        <font>
+                           <Font size="18.0" />
+                        </font>
+                     </Label>
+                     <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Boids" GridPane.columnIndex="1" GridPane.columnSpan="2147483647" GridPane.rowIndex="7">
+                        <font>
+                           <Font size="18.0" />
+                        </font>
+                     </Label>
+                     <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Max Speed" GridPane.columnIndex="1" GridPane.rowIndex="8">
+                        <font>
+                           <Font size="14.0" />
+                        </font>
+                     </Label>
+                     <Label fx:id="max_speed_out" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="1.0" GridPane.columnIndex="3" GridPane.rowIndex="8" />
+                     <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Max Force" GridPane.columnIndex="1" GridPane.rowIndex="9">
+                        <font>
+                           <Font size="14.0" />
+                        </font>
+                     </Label>
+                     <Label fx:id="max_force_out" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="1.0" GridPane.columnIndex="3" GridPane.rowIndex="9" />
+                     <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Boids" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                        <font>
+                           <Font size="14.0" />
+                        </font>
+                     </Label>
+                     <TextField fx:id="boids_count" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" promptText="Enter Starting Amount Here..." GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                     <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#startSimulationWithBoidCount" prefWidth="70.0" text="Start" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                     <HBox prefWidth="200.0" GridPane.columnIndex="1" GridPane.columnSpan="2147483647" GridPane.rowIndex="1">
+                        <children>
+                           <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#setSimulationToPlay" text="Play" HBox.hgrow="ALWAYS" />
+                           <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#setSimulationToPause" text="Pause" HBox.hgrow="ALWAYS" />
+                        </children>
+                     </HBox>
+                     <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Fill" GridPane.columnIndex="1" GridPane.rowIndex="10">
+                        <font>
+                           <Font size="14.0" />
+                        </font>
+                     </Label>
+                     <ColorPicker fx:id="fill_picker" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" GridPane.columnIndex="2" GridPane.columnSpan="2147483647" GridPane.rowIndex="10" />
+                     <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Shape" GridPane.columnIndex="1" GridPane.rowIndex="11">
+                        <font>
+                           <Font size="14.0" />
+                        </font>
+                     </Label>
+                     <HBox GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="11">
+                        <children>
+                           <RadioButton disable="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" selected="true" text="Dot" HBox.hgrow="ALWAYS">
+                              <toggleGroup>
+                                 <ToggleGroup fx:id="shapePolicy" />
+                              </toggleGroup>
+                           </RadioButton>
+                           <RadioButton disable="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Arrow" toggleGroup="$shapePolicy" HBox.hgrow="ALWAYS" />
+                        </children>
+                     </HBox>
+                     <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="World" GridPane.columnIndex="1" GridPane.columnSpan="2147483647" GridPane.rowIndex="5">
+                        <font>
+                           <Font size="18.0" />
+                        </font>
+                     </Label>
+                     <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Edge Policy" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                        <font>
+                           <Font size="14.0" />
+                        </font>
+                     </Label>
+                     <HBox GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="6">
+                        <children>
+                           <RadioButton disable="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="30.0" selected="true" text="Toroid" HBox.hgrow="ALWAYS">
+                              <tooltip>
+                                 <Tooltip text="Boids wrap around" />
+                              </tooltip>
+                              <toggleGroup>
+                                 <ToggleGroup fx:id="edgePolicy" />
+                              </toggleGroup>
+                           </RadioButton>
+                           <RadioButton disable="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="30.0" text="Island" toggleGroup="$edgePolicy" HBox.hgrow="ALWAYS">
+                              <tooltip>
+                                 <Tooltip text="Boids see hard wall and avoid" />
+                              </tooltip>
+                           </RadioButton>
+                           <RadioButton disable="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="30.0" text="Void" toggleGroup="$edgePolicy" HBox.hgrow="ALWAYS">
+                              <tooltip>
+                                 <Tooltip text="Boids fall off world and die" />
+                              </tooltip>
+                           </RadioButton>
+                        </children>
+                     </HBox>
+                     <Slider fx:id="seperation_sld" blockIncrement="1.0" majorTickUnit="1.0" max="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minorTickCount="5" showTickMarks="true" snapToTicks="true" value="1.0" GridPane.columnIndex="2" GridPane.rowIndex="15" />
+                     <Slider fx:id="cohesion_sld" blockIncrement="1.0" majorTickUnit="1.0" max="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minorTickCount="5" showTickMarks="true" snapToTicks="true" value="1.0" GridPane.columnIndex="2" GridPane.rowIndex="14" />
+                     <Slider fx:id="max_force_sld" blockIncrement="0.1" majorTickUnit="0.2" max="1.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minorTickCount="1" showTickMarks="true" snapToTicks="true" value="0.1" GridPane.columnIndex="2" GridPane.rowIndex="9" />
+                     <Slider fx:id="max_speed_sld" blockIncrement="1.0" majorTickUnit="1.0" max="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minorTickCount="5" showTickMarks="true" snapToTicks="true" value="1.0" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+                     <CheckBox fx:id="is_align" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Align" GridPane.columnIndex="1" GridPane.rowIndex="13" />
+                     <CheckBox fx:id="is_cohere" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Cohere" GridPane.columnIndex="1" GridPane.rowIndex="14" />
+                     <CheckBox fx:id="is_seperate" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Seperate" GridPane.columnIndex="1" GridPane.rowIndex="15" />
+                  </children>
+               </GridPane>
+            </children>
+         </AnchorPane>
+         <Canvas fx:id="world" height="600.0" width="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="300.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      </children></AnchorPane>
+</Scene>

@@ -1,0 +1,12 @@
+com\kloneborn\SceneController.class
+com\kloneborn\SceneController$BoidSimulator.class
+com\kloneborn\Launcher.class
+com\kloneborn\Boid$FXProperties.class
+com\kloneborn\Boid$EdgePolicy.class
+com\kloneborn\SimulatorBase.class
+com\kloneborn\Boid$ShapePolicy.class
+com\kloneborn\BoidUtils$BoidGenerator.class
+com\kloneborn\BoidUtils.class
+module-info.class
+com\kloneborn\SimulatorBase$SimulationGameLoop.class
+com\kloneborn\Boid.class
